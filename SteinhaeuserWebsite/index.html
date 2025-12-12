@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psychotherapie Steinhäuser</title>
+  <link rel="stylesheet" href="SteinhaeuserWeseite.css">
+  <script src="steinhaeuser.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+  <!-- Datenschutz-Popup -->
+  <div id="datenschutz-popup" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="datenschutz-title">
+    <div class="popup-content">
+      <h2 id="datenschutz-title">Datenschutzhinweis</h2>
+      <p>Diese Webseite speichert keine personenbezogenen Daten ohne Ihre Zustimmung. Wir verwenden keine Cookies zu Analyse- oder Marketingzwecken. Durch die Nutzung dieser Seite erklären Sie sich mit unseren
+        <a href="datenschutz.html" target="_blank" rel="noopener noreferrer">Datenschutzbestimmungen</a> einverstanden.
+      </p>
+      <button id="popUpOkBtn" type="button">Verstanden</button>
+    </div>
+  </div>
+
+  <!-- Kopfbereich -->
+  <header class="site-header">
+    <!-- Burger-Menü -->
+    <div class="burger-menu" aria-label="Hauptnavigation">
+      <button class="burger-icon" aria-label="Menü öffnen oder schließen" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav" class="menu-content" aria-label="Hauptnavigation">
+        <a href="#top">Start</a>
+        <a href="#angebot">Angebot</a>
+        <a href="#therapeutin">Über mich</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
+
+    <!-- Telefonkontakt -->
+    <div class="phone-contact">
+      <a href="tel:+493634316761" aria-label="Praxis telefonisch anrufen">
+        <span class="phone-icon" aria-hidden="true">📞</span>
+        <span class="phone-number">03634 316761</span>
+      </a>
+    </div>
+
+    <!-- Barrierefreiheit -->
+    <div class="accessibility-widget">
+      <button id="accessibility-btn" type="button" aria-label="Informationen zur Barrierefreiheit anzeigen">
+        ♿ Barrierefreiheit
+      </button>
+
+      <div id="accessibility-menu" class="accessibility-menu" aria-label="Barrierefreiheits-Einstellungen">
+        <button id="background-toggle" type="button">Nur Text</button>
+        <button id="increase-font" type="button">Größere Schrift</button>
+        <button id="decrease-font" type="button">Kleinere Schrift</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero / Meer -->
+    <section class="ocean" aria-label="Hintergrund-Video Meer">
+      <video width="110%" autoplay muted loop playsinline>
+        <source src="images/sea.mp4" type="video/mp4">
+        Dein Browser unterstützt dieses Video nicht.
+      </video>
+      <div class="ocean-fadeout"></div>
+    </section>
+
+    <!-- Praxisname -->
+    <section class="praxis" id="top">
+      <div class="welcome">
+        <p>Praxis Gabriele Steinhäuser – Kinder- und Jugendlichenpsychotherapeutin</p>
+      </div>
+    </section>
+
+    <!-- Einleitung -->
+    <section class="starter" aria-labelledby="einleitung-heading">
+      <div class="intro">
+        <img class="logoPraxis" src="images/logoPraxis.png" alt="Logo der Praxis Steinhäuser">
+        <div class="about">
+          <h2 id="einleitung-heading">Einleitung</h2>
+          <p>Herzlich willkommen auf der Internetseite meiner Praxis für Psychotherapie. Auf diesen Seiten erhalten Sie einen Überblick über mein therapeutisches Angebot und die Behandlungsschwerpunkte. Zudem erfahren Sie Wissenswertes über meine Qualifikationen und meinen beruflichen Hintergrund. Wenn Sie Interesse an einem persönlichen Gespräch haben, finden Sie hier auch alle notwendigen Informationen zur Kontaktaufnahme.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Über die Therapeutin -->
+    <section class="therapistsBackground" id="therapeutin" aria-labelledby="therapeutin-heading">
+      <div class="therapist">
+        <img src="images/therapist.png" alt="Portrait von Gabriele Steinhäuser">
+      </div>
+      <div class="aboutMe">
+        <h2 id="therapeutin-heading">Gabriele Steinhäuser</h2>
+        <p>
+          Kinder- und Jugendlichenpsychotherapeutin (tiefenpsychologisch fundiert)
+          <br><br>
+          Systemische Therapeutin (SG)
+          <br><br>
+          Therapeutin für Psychotraumatologie und traumazentrierte Psychotherapie (ZPTN)
+        </p>
+      </div>
+      <div class="leadingImage">
+        <h2>Leitbild meiner Arbeit</h2>
+        <p>
+          Als tiefenpsychologisch fundiert arbeitende Therapeutin sehe ich seelische Schwierigkeiten als Ausdruck ungelöster innerer oder zwischenmenschlicher Konflikte, die ihre Wurzeln in der Vergangenheit oder in der Gegenwart haben können. Als systemische Therapeutin gehe ich davon aus, dass im Symptom kreative Lösungsansätze verborgen sein können und jeder Mensch über innere Stärke, Fähigkeiten und Begabungen verfügt (und weiterentwickeln kann), um mit solchen Belastungen umzugehen.
+          <br><br>
+          In der traumazentrierten Psychotherapie verknüpfe ich beide Ansätze und ergänze sie durch spezielle Verfahren.
+        </p>
+      </div>
+    </section>
+
+    <!-- Bilder der Praxis -->
+    <section class="slides-container" aria-label="Bilder der Praxis">
+      <!-- Slideshow 1 -->
+      <div class="slideshow" data-start="0">
+        <img src="images/praxis1.jpeg" class="active" alt="Praxisraum 1">
+        <img src="images/praxis2.jpeg" alt="Praxisraum 2">
+        <img src="images/praxis3.jpeg" alt="Praxisraum 3">
+        <img src="images/praxis4.jpeg" alt="Praxisraum 4">
+        <img src="images/praxis5.jpeg" alt="Praxisraum 5">
+        <img src="images/praxis6.jpeg" alt="Praxisraum 6">
+        <img src="images/praxis7.jpeg" alt="Praxisraum 7">
+      </div>
+
+      <!-- Slideshow 2 -->
+      <div class="slideshow" data-start="6">
+        <img src="images/praxis1.jpeg" alt="Praxisraum 1">
+        <img src="images/praxis2.jpeg" alt="Praxisraum 2">
+        <img src="images/praxis3.jpeg" alt="Praxisraum 3">
+        <img src="images/praxis4.jpeg" alt="Praxisraum 4">
+        <img src="images/praxis5.jpeg" alt="Praxisraum 5">
+        <img src="images/praxis6.jpeg" alt="Praxisraum 6">
+        <img src="images/praxis7.jpeg" class="active" alt="Praxisraum 7">
+      </div>
+
+      <!-- Slideshow 3 -->
+      <div class="slideshow" data-start="5">
+        <img src="images/praxis1.jpeg" alt="Praxisraum 1">
+        <img src="images/praxis2.jpeg" alt="Praxisraum 2">
+        <img src="images/praxis3.jpeg" alt="Praxisraum 3">
+        <img src="images/praxis4.jpeg" alt="Praxisraum 4">
+        <img src="images/praxis5.jpeg" alt="Praxisraum 5">
+        <img src="images/praxis6.jpeg" class="active" alt="Praxisraum 6">
+        <img src="images/praxis7.jpeg" alt="Praxisraum 7">
+      </div>
+    </section>
+
+    <!-- Behandlungsangebot -->
+    <section class="section" id="angebot" aria-labelledby="angebot-heading">
+      <div class="sectionsDiv">
+        <div class="treatments">
+          <img src="images/treatments.png" alt="Symbolbild Therapie">
+        </div>
+
+        <article class="sections">
+          <h2 id="angebot-heading">Psychodynamische Einzeltherapie</h2>
+          <p>Konventionelle, auf die jeweiligen Fähigkeiten und Bedürfnisse von Kindern und Jugendlichen angepasste psychodynamische Einzeltherapie im Einzelsetting und dazugehörige Begleitpersonenstunden.</p>
+        </article>
+
+        <article class="sections">
+          <h2>Imaginative Therapieformen</h2>
+          <p>Imaginative Therapieformen insbesondere zur Stabilisierung.</p>
+        </article>
+
+        <article class="sections">
+          <h2>Ego-State-Therapie</h2>
+          <p>Arbeit auf der inneren Bühne insbesondere für Patienten mit ausgeprägter dissoziativer Symptomatik angelehnt an J.G. Watkins und J. Peichl.</p>
+        </article>
+
+        <article class="sections">
+          <h2>Traumakonfrontation</h2>
+          <p>Methoden der Traumakonfrontation (z.&nbsp;B. Screentechnik, Traumaerzählgeschichte in Verbindung mit EMDR, Vierfeldertechnik).</p>
+        </article>
+      </div>
+
+      <!-- Vita & Haltung -->
+      <aside class="therapistsBackground1" aria-labelledby="haltung-heading">
+        <div class="therapist1">
+          <img src="images/Gabi2.png" alt="Gabriele Steinhäuser">
+        </div>
+
+        <div class="vita">
+          <h2 id="haltung-heading">Für die therapeutische Grundhaltung ist mir wichtig:</h2>
+          <p>
+            – Transparenz in der gemeinsamen Arbeit<br><br>
+            – verständliche, anschauliche Erklärungen (Psychoedukation)<br><br>
+            – die Reflexion der therapeutischen Beziehung vor dem Hintergrund der Beziehungserfahrung des Patienten (Übertragungsgeschehen)<br><br>
+            Beispiele: anschauliche Biographiearbeit; Arbeit auf der inneren Bühne (Bilder); Verknüpfung verschiedener Therapieansätze.
+          </p>
+        </div>
+
+        <div class="vita1">
+          <h2>Beruflicher Werdegang</h2>
+          <p>
+            1977 Abitur<br><br>
+            1981 Diplom an der Pädagogischen Hochschule Erfurt/Mühlhausen<br><br>
+            bis 2004 Arbeit in unterschiedlichen pädagogischen Kontexten mit Kindern und Erwachsenen<br><br>
+            2003 Abschluss als Systemische Therapeutin (SG)<br><br>
+            2005 Abschluss als Kinder- und Jugendlichenpsychotherapeutin (tiefenpsychologisch fundiert) an der Akademie für Psychotherapie Erfurt<br><br>
+            2005 Approbation und Kassenzulassung<br><br>
+            2006 Niederlassung<br><br>
+            2015 Abschluss als Therapeutin für Psychotraumatologie und traumazentrierte Psychotherapie am ZPTN Niedersachsen
+          </p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="contact-block" id="kontakt" aria-labelledby="kontakt-heading">
+      <div class="contactImage">
+        <img src="images/contactImg.png" alt="Symbolbild Kontakt">
+      </div>
+
+      <div class="contactSection">
+        <div class="contact">
+          <h2 id="kontakt-heading">Kontakt</h2>
+          <p>
+            Praxis Gabriele Steinhäuser<br>
+            Kinder- und Jugendlichenpsychotherapeutin
+          </p>
+          <p>
+            Tel.: 03634 316761<br>
+            Schillerstr. 25a<br>
+            99610 Sömmerda<br>
+            E-Mail: <a href="mailto:info@deineemailadresse.de">info@deineemailadresse.de</a>
+          </p>
+
+          <h2>Sprechzeiten</h2>
+          <p>
+            Montag 14–19 Uhr<br>
+            Dienstag 14–19 Uhr<br>
+            Mittwoch 14–17 Uhr und bei Bedarf nach Absprache
+          </p>
+
+          <h2>Telefonische Sprechzeiten</h2>
+          <p>
+            Montag 13:15–14:00 Uhr<br>
+            Dienstag 13:00–14:00 Uhr unter 0160&nbsp;99487828<br>
+            Montag bis Mittwoch ab 14 Uhr unter 03634&nbsp;/&nbsp;316761 jeweils 10 Minuten vor der vollen Stunde
+            oder Nachricht auf dem Anrufbeantworter.
+          </p>
+        </div>
+
+        <div class="map">
+          <img src="images/Karte.png" alt="Lageplan der Praxis" style="max-width:100%; height:auto;">
+          <p class="map-credit">
+            Karte: © OpenStreetMap-Mitwirkende
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Praxis Gabriele Steinhäuser</p>
+    <p>
+      <a href="impressum.html">Impressum</a> ·
+      <a href="datenschutz.html">Datenschutz</a>
+    </p>
+  </footer>
+</body>
+</html>
